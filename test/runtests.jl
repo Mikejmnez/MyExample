@@ -1,9 +1,8 @@
 using MyExample
 using Test
 
-# 2e + 3y
-@test my_f(2, 1) == 7
-
 @testset "MyExample.jl" begin
-    my_f(2, 1)
+    @test my_f(2, 1) == 7
+    @test my_f(2, 3) == 13
+    @test new_f(1, 2) == 0.5
 end
